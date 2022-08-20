@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// class Circle{
+//     constructor(radius,color)
+//     {
+//         this._radius=radius;
+//         this._color=color;
+//     }
+
+//     getradius(){
+//         return this._radius;
+//     }
+//     setradius(value){
+//         this._radius =value;
+
+//     }
+//     getcolor(){
+//         return this._color;
+//     }
+//     setcolor(value){
+//         this._color=value;
+//     }
+
+//     getArea(){
+//         return Math.PI*Math.pow(this._radius,2);
+//     }
+    
+//     getCircum(){
+//         return 2*Math.PI*this._radius;
+//     }
+
+// }
+// let circle1= new Circle(1,"Yellow");
+// console.log(circle1.getArea());
+// console.log(circle1.getCircum());
+
+
+class circle{
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+    }
+    getRadius()
+    {
+        return (`the radius is ${this.radius}`);
+    }
+    setRadius(radi)
+    {
+        this.radius=radi;
+    }
+    getColor()
+    {
+        return (`the color is ${this.color}`);
+    }
+    setColor(favoriteColor)
+    {
+        this.color=favoriteColor;
+    }
+    getArea()
+    {
+        return (`the area is ${Math.PI*this.radius*this.radius}`);
+    }
+    getCircumference()
+    {
+        return (`the Circumference is ${2*Math.PI*this.radius}`);
+    }
+}
+const circleValue = new circle(10,"blue");
+console.log(circleValue. getRadius());
+console.log(circleValue. getColor());
+console.log(circleValue.getArea());
+console.log(circleValue. getCircumference());
+
+
+
+// </script>
+</body>
+</html>

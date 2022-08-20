@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+class Uber{
+    constructor(totalKm,waitingTime=0)
+    {
+        this.totalKm=totalKm;
+        this.waitingTime=waitingTime;
+    }
+
+    calculateFare(){
+        if(this.totalKm<=2)
+        {
+        return ( 40 + ' Rs');
+        }
+
+        this.totalKm =this.totalKm-2;
+        return (30 + (this.totalKm*15) + (this.waitingTime*2)+' Rs');
+
+    }
+}
+
+let Ride1 =new Uber(2);
+console.log(Ride1.calculateFare());
+
+let Ride2 = new Uber(82,5);
+console.log(Ride2.calculateFare());
+
+    </script>
+</body>
+</html>
